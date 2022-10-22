@@ -4,7 +4,7 @@ This is assuming a 52 card standard American deck. Other variants will have to
 be programmed in as they become needed
 */
 
-import { shuffle } from '../utils/_functions.js';
+import { shuffle } from '../utils/functions.js';
 
 class Deck {
   init() {

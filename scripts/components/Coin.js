@@ -1,4 +1,4 @@
-import { getKeyString, randomSafeSpot } from '../utils/_functions.js'
+import { getKeyString, randomSafeSpot } from '../utils/functions.js'
 
 function placeCoin() {
   // const { x, y } = randomSafeSpot();

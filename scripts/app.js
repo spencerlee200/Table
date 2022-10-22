@@ -13,7 +13,7 @@ import {
   randomFromArray, 
   randomName,
   randomSafeSpot
-} from './utils/_functions.js'
+} from './utils/functions.js'
 
 (function () {
   let playerId;

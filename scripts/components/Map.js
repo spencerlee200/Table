@@ -1,4 +1,4 @@
-import { getKeyString } from '../utils/_functions.js'
+import { getKeyString } from '../utils/functions.js'
 
 const mapData = {
   minX: 1,
