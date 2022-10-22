@@ -15,13 +15,13 @@
   left: 5px;
   width: 7px;
   height: 5px;
-  background: url(/images/arrow.png) no-repeat no-repeat;
+  background: url('./../images/arrow.png') no-repeat no-repeat;
 }
 
 .Character_sprite {
   overflow: hidden;
   top: -3px;
-  background: url(/images/characters.png);
+  background: url('./../images/characters.png');
 }
 
 .Character[data-direction="right"] .Character_sprite {
@@ -44,7 +44,7 @@
 .Character[data-character="12"] .Character_sprite { background-position-y: -192px }
 .Character[data-character="13"] .Character_sprite { background-position-y: -208px }
 
-.Character_shadow { background: url(/images/shadow.png) no-repeat no-repeat }
+.Character_shadow { background: url('./../images/shadow.png') no-repeat no-repeat }
 
 .Character_name-container {
   position: absolute;
