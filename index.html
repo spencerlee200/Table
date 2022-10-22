@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <title>The Table</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/main.css" type="text/css">
+  </head>
+  <body>
+
+    <div class="game-container"></div>
+    <div class="player-info">
+      <div>
+        <label for="player-name">Your Name</label>
+        <input id="player-name" maxlength="10" type="text" />
+      </div>
+      <div>
+        <button id="player-character">Change Character</button>
+      </div>
+      
+      <button type="button" name="button">Deal</button>
+
+    </div>
+    
+    <div id="dev-info">
+      <div id="player-location"></div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script>
+      const firebaseConfig = {
+        apiKey: "AIzaSyBv7RVef-g_-mJZkSdKC_b5F6TQvmbGmEE",
+        authDomain: "the-table-686c8.firebaseapp.com",
+        databaseURL: "https://the-table-686c8-default-rtdb.firebaseio.com",
+        projectId: "the-table-686c8",
+        storageBucket: "the-table-686c8.appspot.com",
+        messagingSenderId: "695460487056",
+        appId: "1:695460487056:web:bee8ec2f932f0adef5dd15"
+      };
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <script type="module" src="/scripts/app.js"></script>
+  </body>
+</html>

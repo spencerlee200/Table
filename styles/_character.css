@@ -1,0 +1,66 @@
+.Character {
+  transition: transform 0.4s;
+}
+.Character.you {
+  z-index: 1;
+}
+.Character.you .Character_you-arrow {
+  display: block;
+}
+
+.Character_you-arrow {
+  display: none;
+  position: absolute;
+  top:-18px;
+  left: 5px;
+  width: 7px;
+  height: 5px;
+  background: url(/images/arrow.png) no-repeat no-repeat;
+}
+
+.Character_sprite {
+  overflow: hidden;
+  top: -3px;
+  background: url(/images/characters.png);
+}
+
+.Character[data-direction="right"] .Character_sprite {
+  background-position-x: 16px;
+}
+
+/* -+- NEEDS TO BE UPDATED FOR EACH NEW CHARACTER -+- */
+.Character[data-character="0"] .Character_sprite { background-position-y: 0px }
+.Character[data-character="1"] .Character_sprite { background-position-y: -16px }
+.Character[data-character="2"] .Character_sprite { background-position-y: -32px }
+.Character[data-character="3"] .Character_sprite { background-position-y: -48px }
+.Character[data-character="4"] .Character_sprite { background-position-y: -64px }
+.Character[data-character="5"] .Character_sprite { background-position-y: -80px }
+.Character[data-character="6"] .Character_sprite { background-position-y: -96px }
+.Character[data-character="7"] .Character_sprite { background-position-y: -112px }
+.Character[data-character="8"] .Character_sprite { background-position-y: -128px }
+.Character[data-character="9"] .Character_sprite { background-position-y: -144px }
+.Character[data-character="10"] .Character_sprite { background-position-y: -160px }
+.Character[data-character="11"] .Character_sprite { background-position-y: -176px }
+.Character[data-character="12"] .Character_sprite { background-position-y: -192px }
+.Character[data-character="13"] .Character_sprite { background-position-y: -208px }
+
+.Character_shadow { background: url(/images/shadow.png) no-repeat no-repeat }
+
+.Character_name-container {
+  position: absolute;
+  top: -12px;
+  left: -5px;
+  font-size: 5px;
+  padding: 1px 2px 1px;
+  border-radius: 3px;
+  background: #333;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.Character_coins {
+  margin-left: 1px;
+  color: gold;
+}
